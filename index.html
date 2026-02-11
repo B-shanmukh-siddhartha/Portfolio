@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Betha Shanmukha Siddhartha | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Betha Shanmukha Siddhartha</h1>
+    <p>Computer Science (AI & ML) Student | CGPA: 8.91</p>
+
+    <button class="primary-btn" onclick="scrollToSection('projects')">
+        View My Work
+    </button>
+
+    <button class="primary-btn" onclick="scrollToSection('contact')">
+        Contact Me
+    </button>
+</header>
+
+<section id="about">
+    <h2>Career Objective</h2>
+    <p>
+        A motivated Computer Science student with a strong interest in problem solving,
+        data structures, and AI-based applications, seeking entry-level roles to apply my skills
+        and grow as a software engineer.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-box">
+            <h3>Languages</h3>
+            <p>C / C++, Python, JavaScript, HTML + CSS</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>Libraries</h3>
+            <p>C++ STL, Python Libraries</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>Web Development Tools</h3>
+            <p>Node.js, VS Code, Git, GitHub</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>Databases</h3>
+            <p>Relational Database (MySQL)</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>Other Skills</h3>
+            <p>Machine Learning, Data Visualization</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>Relevant Coursework</h3>
+            <p>
+                Data Structures & Algorithms,
+                Operating Systems,
+                Object Oriented Programming,
+                Database Management System,
+                Software Engineering
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>Human Like Code Optimizer</h3>
+        <p>
+            Developed an intelligent human-like code optimization system using RoBERTa (LLM)
+            and Decision Tree models for semantic code understanding.
+        </p>
+
+        <button class="github-btn"
+            onclick="window.open('https://github.com/B-shanmukh-siddhartha/human_like_code_optimization.git', '_blank')">
+            View on GitHub
+        </button>
+    </div>
+
+    <div class="project-card">
+        <h3>Real Time Financial Dashboard</h3>
+        <p>
+            Built using HTML, CSS, JavaScript and Chart.js to visualize stock trends
+            with API integration and chatbot assistance.
+        </p>
+
+        <button class="github-btn"
+            onclick="window.open('https://github.com/B-shanmukh-siddhartha/Financial_Dashboard.git', '_blank')">
+            View on GitHub
+        </button>
+    </div>
+
+    <div class="project-card">
+        <h3>Amazon Clone Website</h3>
+        <p>
+            Responsive Amazon homepage clone built using HTML and CSS.
+        </p>
+
+        <button class="github-btn"
+            onclick="window.open('https://github.com/B-shanmukh-siddhartha/Amazon-Clone.git', '_blank')">
+            View on GitHub
+        </button>
+    </div>
+
+</section>
+
+
+<section id="internships">
+    <h2>Internships</h2>
+
+    <div class="project-card" onclick="toggleDetails('i1')">
+        <h3>Infosys Springboard – AI Virtual Internship</h3>
+        <p class="hidden" id="i1">
+            Worked on Machine Learning fundamentals, NLP concepts,
+            and AI-Enabled Real-Time Sales Call Assistant project.
+        </p>
+    </div>
+
+    <div class="project-card" onclick="toggleDetails('i2')">
+        <h3>Salesforce Developer Virtual Internship</h3>
+        <p class="hidden" id="i2">
+            Gained experience in Apex, Lightning Web Components (LWC),
+            Salesforce CLI and API-based application development.
+        </p>
+    </div>
+
+</section>
+
+<section id="achievements">
+    <h2>Achievements</h2>
+    <p>🏆 Runner-Up – ZENIT Hackathon</p>
+
+    <button onclick="window.open('https://leetcode.com/u/B_Shanmukha_Siddhartha/')">
+        LeetCode Profile
+    </button>
+
+    <button onclick="window.open('https://www.geeksforgeeks.org/profile/shanmukhasiq24u')">
+        GeeksforGeeks Profile
+    </button>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Your Email">
+    <textarea id="message" placeholder="Message"></textarea>
+    <button class="primary-btn" onclick="sendEmail()">Send Message</button>
+    <p id="statusMsg"></p>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
